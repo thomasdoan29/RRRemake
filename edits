@@ -1,0 +1,91 @@
+<div class="flexbox">
+    
+    <div class="picturesflex">
+        <img src="assets/img/morecandles.jpg">
+        <div class="centeredtext">More candles</div>
+    </div>
+    <div class="picturesflex angels">
+        <img src="assets/img/angels1.jpg">
+        <div class="centeredtext">Angles</div>
+    </div>
+    <div class="picturesflex">
+        <img src="assets/img/candles.jpg">
+        <div class="centeredtext">Candles</div>
+    </div>
+    <div class="picturesflex">
+        <img src="assets/img/birch.jpg">
+        <div class="centeredtext">BIRCH</div>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+CSS addendum.
+
+-----
+
+
+
+
+.flexbox {
+    display: flex;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    flex-grow: 1;
+
+}
+
+.picturesflex {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+@media screen and (max-width: 800px) {
+    .flexbox {
+        display: flex;
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        flex-grow: 1;
+        flex-direction: column;
+
+    }
+}
+
+.centeredtext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  background: #8B0000;
+  opacity: .81;
+  color: white;
+  width: 100%;
+  transition: 1s;
+
+}
+
+.centeredtext:hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  background: #ff4d4d;
+  opacity: .81;
+  color: white;
+  width: 100%;
+  zoom: 1.02;
+
+}
